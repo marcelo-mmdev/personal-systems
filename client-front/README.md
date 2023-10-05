@@ -17,3 +17,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ⭐ [Axios](https://nextjs.org/docs) - Features API conection.
 ⭐ [React-icons](https://react-icons.github.io/react-icons) - Icons in project.
 ⭐ [React-calendar](https://www.npmjs.com/package/react-calendar) - Caledário in project.
+⭐ [React-calendar](https://www.npmjs.com/package/react-calendar) - Caledário in project.
