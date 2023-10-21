@@ -1,6 +1,9 @@
 "use client";
 
-import { Box, Button, Icon, Link } from "@chakra-ui/react";
+import AvatarBasic from "@/components/base/avatarBasic";
+import { Box, Button, Icon } from "@chakra-ui/react";
+// import Link from 'next/link';
+import { useState } from "react";
 import {
   FcGlobe,
   FcServices,
@@ -16,6 +19,8 @@ import {
 import { MdRestaurantMenu } from "react-icons/md";
 
 export default function Menu() {
+  const [selecionado, setSelecionado] = useState("");
+
   return (
     <>
       <Box
@@ -35,51 +40,64 @@ export default function Menu() {
           Logo
         </Box>
         <Box
-          h="80%"
+          h="60%"
           w="100%"
-          pl={"10%"}
+          // pl={"10%"}
           display={"block"}
           alignItems={"center"}
           justifyContent={"center"}
         >
-          <Box p={"3% 5% 3% 0"}>
-            <Box
-              w="100%"
-              h="100%"
-              gap="3"
-              bg={"none"}
-              borderRadius={"8px"}
-              // color={"VERD.30"}
-              display="flex"
-              alignItems="center"
+          {/* 
+          <Link 
+            onClick={() => {setSelecionado(1)}} 
+            className={selecionado === 1 ? "menuSelecionado" : ""} 
+            to="/"> 
+              <AiOutlineHome color="#7B68EE" className="icone" />
+                HOME
+          </Link> 
+          */}
+
+          {/* <Box p={"3% 5% 3% 5%"}>
+            <Link
+              to={"/mercado"}
+              // w="100%"
+              // h="100%"
+              // gap="4"
+              // bg={"none"}
+              // borderRadius={"8px"}
+              // // color={"VERD.30"}
+              // display="flex"
+              // alignItems="center"
+              // justifyContent={"center"}
               onClick={() => {
-                // onOpenAddProducts();
+                // setSelecionado(1)
               }}
-              _hover={{
-                bg: "AZUL.20",
-                color: "BRPR.10",
-                padding: "5px",
-              }}
+              // _hover={{
+              //   bg: "AZUL.30",
+              //   color: "BRPR.10",
+              //   padding: "5px",
+              // }}
             >
               <Icon as={FcHome} w="25px" h="25px" />
               Home
-            </Box>
-          </Box>
-          <Box p={"3% 5% 3% 0"}>
+            </Link>
+          </Box> */}
+          <Box p={"3% 5% 3% 5%"}>
             <Box
               w="100%"
               h="100%"
-              gap="3"
+              gap="4"
               bg={"none"}
               borderRadius={"8px"}
               // color={"VERD.30"}
               display="flex"
               alignItems="center"
+              justifyContent={"center"}
               onClick={() => {
                 // onOpenAddProducts();
               }}
               _hover={{
-                bg: "AZUL.20",
+                bg: "AZUL.30",
                 color: "BRPR.10",
                 padding: "5px",
               }}
@@ -88,21 +106,22 @@ export default function Menu() {
               Agenda
             </Box>
           </Box>
-          <Box p={"3% 5% 3% 0"}>
+          <Box p={"3% 5% 3% 5%"}>
             <Box
               w="100%"
               h="100%"
-              gap="3"
+              gap="4"
               bg={"none"}
               borderRadius={"8px"}
               // color={"VERD.30"}
               display="flex"
               alignItems="center"
+              justifyContent={"center"}
               onClick={() => {
                 // onOpenAddProducts();
               }}
               _hover={{
-                bg: "AZUL.20",
+                bg: "AZUL.30",
                 color: "BRPR.10",
                 padding: "5px",
               }}
@@ -111,21 +130,22 @@ export default function Menu() {
               Cardápio
             </Box>
           </Box>
-          <Box p={"3% 5% 3% 0"}>
+          <Box p={"3% 5% 3% 5%"}>
             <Box
               w="100%"
               h="100%"
-              gap="3"
+              gap="4"
               bg={"none"}
               borderRadius={"8px"}
               // color={"VERD.30"}
               display="flex"
               alignItems="center"
+              justifyContent={"center"}
               onClick={() => {
                 // onOpenAddProducts();
               }}
               _hover={{
-                bg: "AZUL.20",
+                bg: "AZUL.30",
                 color: "BRPR.10",
                 padding: "5px",
               }}
@@ -134,21 +154,22 @@ export default function Menu() {
               Financeiro
             </Box>
           </Box>
-          <Box p={"3% 5% 3% 0"}>
+          <Box p={"3% 5% 3% 5%"}>
             <Box
               w="100%"
               h="100%"
-              gap="3"
+              gap="4"
               bg={"none"}
               borderRadius={"8px"}
               // color={"VERD.30"}
               display="flex"
               alignItems="center"
+              justifyContent={"center"}
               onClick={() => {
                 // onOpenAddProducts();
               }}
               _hover={{
-                bg: "AZUL.20",
+                bg: "AZUL.30",
                 color: "BRPR.10",
                 padding: "5px",
               }}
@@ -157,21 +178,22 @@ export default function Menu() {
               Fitness
             </Box>
           </Box>
-          <Box p={"3% 5% 3% 0"}>
+          <Box p={"3% 5% 3% 5%"}>
             <Box
               w="100%"
               h="100%"
-              gap="3"
+              gap="4"
               bg={"none"}
               borderRadius={"8px"}
               // color={"VERD.30"}
               display="flex"
               alignItems="center"
+              justifyContent={"center"}
               onClick={() => {
                 // onOpenAddProducts();
               }}
               _hover={{
-                bg: "AZUL.20",
+                bg: "AZUL.30",
                 color: "BRPR.10",
                 padding: "5px",
               }}
@@ -180,21 +202,22 @@ export default function Menu() {
               Meditação
             </Box>
           </Box>
-          <Box p={"3% 5% 3% 0"}>
+          <Box p={"3% 5% 3% 5%"}>
             <Box
               w="100%"
               h="100%"
-              gap="3"
+              gap="4"
               bg={"none"}
               borderRadius={"8px"}
               // color={"VERD.30"}
               display="flex"
               alignItems="center"
+              justifyContent={"center"}
               onClick={() => {
                 // onOpenAddProducts();
               }}
               _hover={{
-                bg: "AZUL.20",
+                bg: "AZUL.30",
                 color: "BRPR.10",
                 padding: "5px",
               }}
@@ -203,21 +226,22 @@ export default function Menu() {
               Mercado
             </Box>
           </Box>
-          <Box p={"3% 5% 3% 0"}>
+          <Box p={"3% 5% 3% 5%"}>
             <Box
               w="100%"
               h="100%"
-              gap="3"
+              gap="4"
               bg={"none"}
               borderRadius={"8px"}
               // color={"VERD.30"}
               display="flex"
               alignItems="center"
+              justifyContent={"center"}
               onClick={() => {
                 // onOpenAddProducts();
               }}
               _hover={{
-                bg: "AZUL.20",
+                bg: "AZUL.30",
                 color: "BRPR.10",
                 padding: "5px",
               }}
@@ -226,21 +250,22 @@ export default function Menu() {
               Objetivos
             </Box>
           </Box>
-          <Box p={"3% 5% 3% 0"}>
+          <Box p={"3% 5% 3% 5%"}>
             <Box
               w="100%"
               h="100%"
-              gap="3"
+              gap="4"
               bg={"none"}
               borderRadius={"8px"}
               // color={"VERD.30"}
               display="flex"
               alignItems="center"
+              justifyContent={"center"}
               onClick={() => {
                 // onOpenAddProducts();
               }}
               _hover={{
-                bg: "AZUL.20",
+                bg: "AZUL.30",
                 color: "BRPR.10",
                 padding: "5px",
               }}
@@ -249,21 +274,22 @@ export default function Menu() {
               Planos
             </Box>
           </Box>
-          <Box p={"3% 5% 3% 0"}>
+          <Box p={"3% 5% 3% 5%"}>
             <Box
               w="100%"
               h="100%"
-              gap="3"
+              gap="4"
               bg={"none"}
               borderRadius={"8px"}
               // color={"VERD.30"}
               display="flex"
               alignItems="center"
+              justifyContent={"center"}
               onClick={() => {
                 // onOpenAddProducts();
               }}
               _hover={{
-                bg: "AZUL.20",
+                bg: "AZUL.30",
                 color: "BRPR.10",
                 padding: "5px",
               }}
@@ -272,6 +298,15 @@ export default function Menu() {
               Settings
             </Box>
           </Box>
+        </Box>
+        <Box
+          h="20%"
+          w="100%"
+          display={"flex"}
+          alignItems={"center"}
+          justifyContent={"center"}
+        >
+          <AvatarBasic />
         </Box>
       </Box>
     </>

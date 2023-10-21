@@ -1,8 +1,8 @@
 "use client";
 
 import ModuleManha from "@/components/modules/moduleDasboard/moduleManha";
-import { Box, Button, Icon, Text, useDisclosure } from "@chakra-ui/react";
-import { MdLocalCafe } from "react-icons/md";
+import { Box, Button, Icon, useDisclosure } from "@chakra-ui/react";
+import { PiBowlFoodFill } from "react-icons/pi";
 
 export default function Janta() {
   const {
@@ -17,26 +17,27 @@ export default function Janta() {
         h="100%"
         w="100%"
         p="2"
-        bg="CINZ.50"
-        border="2px solid #000"
-        borderRadius={"8px"}
+        bg="BRPR.10"
+        // border="2px solid #000"
+        borderRadius={"20px"}
       >
         <Box
           h="10%"
           w="100%"
           gap={"4"}
-          fontSize={"14px"}
+          color={"AZUL.30"}
+          fontSize={"16px"}
           alignItems={"center"}
           display={"flex"}
           justifyContent={"center"}
         >
-          <Box>Café da Manha</Box>
+          <Box fontWeight={"bold"}>Jantar</Box>
           <Box>
             <Icon
-              as={MdLocalCafe}
+              as={PiBowlFoodFill}
               w="25px"
               h="25px"
-              color={"BRPR.20"}
+              // color={"BRPR.20"}
               display="center"
               alignItems="center"
               justifyContent="center"
@@ -44,21 +45,21 @@ export default function Janta() {
           </Box>
         </Box>
         <Box
-          h="70%"
+          h="60%"
           w="100%"
           mt={"2"}
-          color={"BRPR.10"}
-          fontSize={"12px"}
+          color={"BRPR.20"}
+          textStyle="text3"
           display={"block"}
           alignItems={"center"}
         >
-          <Text>3 - Ovos mexidos com farinha</Text>
-          <Text>1 - Café com Leite</Text>
-          <Text>250g - Melão</Text>
-          <Text>100g - Morango</Text>
+          <Box>3 - Ovos mexidos com farinha</Box>
+          <Box>1 - Café com Leite</Box>
+          <Box>250g - Melão</Box>
+          <Box>100g - Morango</Box>
         </Box>
         <Box
-          h="20%"
+          h="30%"
           w="100%"
           alignItems={"center"}
           display={"flex"}
@@ -66,19 +67,19 @@ export default function Janta() {
         >
           <Button
             w="30%"
-            h="80%"
-            bg={"CINZ.30"}
+            h="60%"
+            bg={"AZUL.30"}
             color={"BRPR.10"}
             borderRadius="10px"
             onClick={() => {
               onOpenAddProducts();
             }}
             _hover={{
-              bg: "CINZ.20",
+              bg: "AZUL.40",
               color: "BRPR.10",
             }}
           >
-            <Text
+            <Box
               p="1"
               fontSize={"14px"}
               alignItems={"center"}
@@ -86,7 +87,7 @@ export default function Janta() {
               justifyContent={"center"}
             >
               Receita
-            </Text>
+            </Box>
           </Button>
         </Box>
       </Box>

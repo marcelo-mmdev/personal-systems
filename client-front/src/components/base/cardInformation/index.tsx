@@ -1,14 +1,14 @@
 "use client";
 
-import { Box, Button, Icon, Text } from "@chakra-ui/react";
-import { FaUsers } from "react-icons/fa";
+import { Box, Button, Icon } from "@chakra-ui/react";
+import { FcMoneyTransfer } from "react-icons/fc";
 
 export default function CardInformation() {
   return (
     <>
       <Box
-        h="100px"
-        w="33%"
+        h="100%"
+        w="100%"
         p="16px"
         bg={"BRPR.10"}
         borderRadius={"10px"}
@@ -21,27 +21,27 @@ export default function CardInformation() {
           alignItems={"center"}
         >
           <Box display={"block"}>
-            <Text>Traffic</Text>
-            <Text>350,897</Text>
+            <Box textStyle="text2">Saldo da Conta do Mês</Box>
+            <Box textStyle="text2">R$: 350,89</Box>
           </Box>
           <Box>
             <Button
               w="60px"
               h="60px"
-              bg={"VERD.30"}
+              bg={"AZUL.30"}
               borderRadius="50%"
               onClick={() => {
                 // onOpenAddProducts();
               }}
-              // _hover={{
-              //   bg: "Vnone",
-              // }}
+              _hover={{
+                bg: "AZUL.40",
+              }}
             >
               <Icon
-                as={FaUsers}
+                as={FcMoneyTransfer}
                 w="30px"
                 h="30px"
-                color={"BRPR.10"}
+                // color={"BRPR.10"}
                 display="center"
                 alignItems="center"
                 justifyContent="center"
@@ -50,7 +50,10 @@ export default function CardInformation() {
           </Box>
         </Box>
         <Box h="20%" mt="5px" display={"flex"} alignItems={"center"}>
-          <Text fontSize={"12px"}> 3.48% Since last month</Text>
+          <Box fontSize={"14px"}> 3.48%</Box>
+          <Box ml="10px" fontSize={"10px"}>
+            Orçamento do Mês comparado ao Mês passado.
+          </Box>
         </Box>
       </Box>
     </>

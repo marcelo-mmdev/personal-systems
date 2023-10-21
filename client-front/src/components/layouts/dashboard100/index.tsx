@@ -9,9 +9,9 @@ import Manha from "@/components/base/cardapio/manha";
 import { Graphics } from "@/components/base/graphics";
 import TableProducts from "@/components/base/tableProducts";
 import ModuleDashboard from "@/components/modules/moduleDasboard";
-import { Box, Text } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 
-export default function Dashboard() {
+export default function Dashboard100() {
   return (
     <>
       <Box h="100%">
@@ -37,11 +37,11 @@ export default function Dashboard() {
             display={"flex"}
             alignItems={"center"}
           >
-            <Box h="100%" w="25%">
+            <Box h="100%" w="40%">
               {/* Lista pra compra */}
               <TableProducts />
             </Box>
-            <Box h="100%" w="25%" display={"block"}>
+            <Box h="100%" w="30%" display={"block"}>
               <Box h="38%" w="100%">
                 {/* Grafico */}
                 <Graphics />
@@ -52,29 +52,30 @@ export default function Dashboard() {
                 <Calendario />
               </Box>
             </Box>
-            <Box h="100%" w="25%" bg="yellow">
-              {/* Cardápio */}
+            {/* <Box h="100%" w="25%" bg="yellow">
               <Cardapio />
-            </Box>
-            <Box h="100%" w="25%" display={"block"}>
+            </Box> */}
+            <Box h="100%" w="30%" display={"block"} gap="2">
               <Box
-                h="10%"
+                h="6%"
                 w="100%"
                 // bg="pink"
                 alignItems={"center"}
                 display={"flex"}
                 justifyContent={"center"}
               >
-                <Text>Cardápio do dia</Text>
+                <Box>Cardápio do dia</Box>
               </Box>
               <Box h="30%" w="100%">
                 {/* Manhã */}
                 <Manha />
               </Box>
+              <Box h="2%" />
               <Box h="30%" w="100%">
                 {/* Almoço */}
                 <Almoco />
               </Box>
+              <Box h="2%" />
               <Box h="30%" w="100%">
                 {/* Janta */}
                 <Janta />

@@ -4,7 +4,7 @@ import {
   Box,
   Heading,
   Container,
-  Text,
+  // Text,
   Button,
   Stack,
   Icon,
@@ -16,7 +16,8 @@ import Link from "next/link";
 export default function Page404() {
   return (
     <>
-      <Container maxW={"100vh"} h={"100%"}>
+      erro
+      {/* <Container maxW={"100vh"} h={"100%"}>
         <Stack
           as={Box}
           textAlign={"center"}
@@ -29,14 +30,14 @@ export default function Page404() {
             lineHeight={"110%"}
           >
             Desculpa não encontrada! <br />
-            <Text as={"span"} color={"blue.400"}>
+            <Box as={"span"} color={"blue.400"}>
               Erro 404
-            </Text>
+            </Box>
           </Heading>
-          <Text color={"gray.500"}>
+          <Box color={"gray.500"}>
             Por algum motivo não podemos exibir essa pagina por favor retorne
             para a pagina anterior. Obrigado pela compreensão
-          </Text>
+          </Box>
           <Stack
             direction={"column"}
             spacing={3}
@@ -68,7 +69,7 @@ export default function Page404() {
                 right={-71}
                 top={"10px"}
               />
-              <Text
+              <Box
                 fontSize={"lg"}
                 fontFamily={"Caveat"}
                 position={"absolute"}
@@ -77,11 +78,11 @@ export default function Page404() {
                 transform={"rotate(10deg)"}
               >
                 retornar para o inicio.
-              </Text>
+              </Box>
             </Box>
           </Stack>
         </Stack>
-      </Container>
+      </Container> */}
     </>
   );
 }

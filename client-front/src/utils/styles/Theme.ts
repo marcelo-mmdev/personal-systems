@@ -58,4 +58,31 @@ export const ThemeST = extendTheme({
       "40": "#800000",
     },
   },
+  textStyles: {
+    h1: {
+      // you can also use responsive styles
+      fontSize: ["48px", "72px"],
+      fontWeight: "bold",
+      lineHeight: "110%",
+      letterSpacing: "-2%",
+    },
+    h2: {
+      fontSize: ["36px", "48px"],
+      fontWeight: "semibold",
+      lineHeight: "110%",
+      letterSpacing: "-1%",
+    },
+    text1: {
+      fontSize: ["14px", "16px"],
+      fontWeight: "semibold",
+      // lineHeight: "110%",
+      // letterSpacing: "-1%",
+    },
+    text2: {
+      fontSize: ["10px", "14px"],
+    },
+    text3: {
+      fontSize: "12px",
+    },
+  },
 });

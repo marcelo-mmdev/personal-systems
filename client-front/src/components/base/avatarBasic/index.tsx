@@ -13,7 +13,6 @@ import {
   Avatar,
   Button,
   Box,
-  Text,
   Divider,
 } from "@chakra-ui/react";
 import { MdOutlineSearch } from "react-icons/md";
@@ -44,13 +43,18 @@ export default function AvatarBasic() {
 
       <Menu>
         <MenuButton as={Button} colorScheme="none">
-          <Box h={"100%"} gap={"2"} display={"flex"} alignItems={"center"}>
+          <Box h={"100%"} display={"block"} alignItems={"center"}>
             <Avatar
               name="Usuario"
               src="https://demos.creative-tim.com/argon-dashboard-react/static/media/team-4-800x800.99c612eb.jpg"
               size="md"
             />
-            <Text fontSize={"14px"}>Marcelo Rodrigues</Text>
+            <Box mt="2" color="BRPR.20" textStyle="text2">
+              Marcelo Rodrigues
+            </Box>
+            <Box mt="2" color="BRPR.20" textStyle="text2">
+              Sair
+            </Box>
           </Box>
         </MenuButton>
         <MenuList>

@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Text } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 
 export default function Footer() {
   return (
@@ -12,7 +12,7 @@ export default function Footer() {
         justifyContent={"center"}
       >
         <Box p={"2px"} color={"BRPR.10"}>
-          <Text>© 2023 MM dev. All rights reserved</Text>
+          © 2023 MM dev. All rights reserved
         </Box>
         {/* <Box>Alguma coisa</Box> */}
       </Box>

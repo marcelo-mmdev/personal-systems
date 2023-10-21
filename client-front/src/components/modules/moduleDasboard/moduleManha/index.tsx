@@ -9,7 +9,6 @@ import {
   ModalFooter,
   ModalHeader,
   ModalOverlay,
-  Text,
   useDisclosure,
 } from "@chakra-ui/react";
 import React from "react";
@@ -28,36 +27,32 @@ export default function ModuleManha({ openModal, closeModal }: Props) {
           <ModalOverlay />
           <ModalContent bg={"BRPR.10"}>
             <ModalHeader color={"VERD.40"}>
-              <Text
-                display="center"
-                alignItems="center"
-                justifyContent="center"
-              >
+              <Box display="center" alignItems="center" justifyContent="center">
                 Ingredientes
-              </Text>
+              </Box>
             </ModalHeader>
             <ModalCloseButton />
             <ModalBody>
-              <Box display={"block"} fontSize={"12px"}>
-                <Text>
+              <Box display={"block"} textStyle="text3">
+                <Box>
                   1 colher de sopa de manteiga sem sal 1 colher de sopa mais
-                </Text>
-                <Text>1 xícara de chá de farinha de trigo</Text>
-                <Text>3 ovos</Text>
-                <Text>1 e 1/2 xícara de chá de açúcar</Text>
-                <Text>3/4 xícara de chá de óleo vegetal</Text>
-                <Text>3/4 xícara de chá de leite integral</Text>
-                <Text>3/4 xícara de chá de fubá</Text>
-                <Text>1/2 xícara de chá de amido de milho</Text>
-                <Text>
+                </Box>
+                <Box>1 xícara de chá de farinha de trigo</Box>
+                <Box>3 ovos</Box>
+                <Box>1 e 1/2 xícara de chá de açúcar</Box>
+                <Box>3/4 xícara de chá de óleo vegetal</Box>
+                <Box>3/4 xícara de chá de leite integral</Box>
+                <Box>3/4 xícara de chá de fubá</Box>
+                <Box>1/2 xícara de chá de amido de milho</Box>
+                <Box>
                   1 colher de sopa de fermento químico em pó (fermento para
                   bolo)
-                </Text>
+                </Box>
               </Box>
             </ModalBody>
 
             <ModalFooter>
-              <Text fontSize={"16px"}>Bom dia!</Text>
+              <Box textStyle="text1">Bom dia!</Box>
             </ModalFooter>
           </ModalContent>
         </Modal>

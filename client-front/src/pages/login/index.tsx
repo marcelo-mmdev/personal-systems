@@ -11,7 +11,6 @@ import {
   Stack,
   Button,
   Heading,
-  Text,
   useColorModeValue,
   Link,
 } from "@chakra-ui/react";
@@ -32,9 +31,9 @@ export default function Login() {
           <Heading fontSize={"4xl"} textAlign={"center"}>
             ⭐ Login do Sistema
           </Heading>
-          <Text fontSize={"lg"} color={"gray.600"}>
+          <Box fontSize={"lg"} textStyle="h2" color={"gray.600"}>
             Vamos nós organizar ✌️
-          </Text>
+          </Box>
         </Stack>
         <Box
           rounded={"lg"}
@@ -64,7 +63,7 @@ export default function Login() {
               </InputGroup>
             </FormControl>
             <Stack spacing={10} pt={2} display={"flex"} alignItems={"center"}>
-              <Link href="/home">
+              <Link href="/dashboard">
                 <Button
                   loadingText="Submitting"
                   size="lg"

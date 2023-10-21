@@ -5,7 +5,8 @@
   display: block;
   justify-content: center;
   align-items: center;
+  border: none;
   /* background-color: #000; */
-  border: 2px solid #b3b3b375;
-  border-radius: 8px;
+  /* border: 2px solid #b3b3b375; */
+  border-radius: 20px;
 }
